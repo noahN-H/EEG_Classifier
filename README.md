@@ -45,22 +45,14 @@ Datasets used from Subject S001, runs R01 & R02 - which are the sets that contai
 
 
 # imports needed to run:
-numpy
-
-mne
-
-math
-
-from sklearn.model_selection import train_test_split
-
-from sklearn.linear_model import LogisticRegression
-
-from sklearn.model_selection import cross_val_score
-
-from sklearn.preprocessing import StandardScaler
-
-from sklearn.pipeline import Pipeline
-
+    import numpy as np
+    import mne
+    import math
+    from sklearn.model_selection import train_test_split
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.model_selection import cross_val_score
+    from sklearn.preprocessing import StandardScaler
+    from sklearn.pipeline import Pipeline
 
 
 # Sources
