@@ -19,12 +19,14 @@ Datasets used from Subject S001, runs R01 & R02 - which are the sets that contai
 
 # Results:
   v1:
+  
     - alpha power only
     - had power scaling issue which got solved in v2 and was then brought into scale v1 correctly
     - once scaled correctly it had an avg 0.9 across all folds
     - [0.7, 1., 1.] - avg 0.9
     
   v2:
+  
     - alpha and beta
     - fixed power scaling so no issue to begin with
     - [1., 1., 1.] - avg 1.0    
