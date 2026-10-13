@@ -20,29 +20,28 @@ Datasets used from Subject S001, runs R01 & R02 - which are the sets that contai
 # Results:
   v1:
   
-    - alpha power only
-    - had power scaling issue which got solved in v2 and was then brought into scale v1 correctly
-    - once scaled correctly it had an avg 0.9 across all folds
-    - [0.7, 1., 1.] - avg 0.9
+      - Alpha power only
+      - Power scaling issue which got solved in v2 and was then brought into scale v1 correctly
+      - Once scaled correctly it had an avg 0.9 across all folds
+      - [0.7, 1., 1.] - avg 0.9
     
   v2:
   
-    - alpha and beta
-    - fixed power scaling so no issue to begin with
-    - [1., 1., 1.] - avg 1.0    
+      - Alpha and Beta
+      - Fixed power scaling so no issue to begin with
+      - [1., 1., 1.] - avg 1.0    
 
 
 # Limitations:
-- all data is from a single subject
-- small sample size of 30
-- all "eyes open" chunks come from one single reading (R01) and all "eyes closed" come from a different single reading (R02). This means that the classifier may be using differences between the two recording sessions rather than the actual relevant data
+- All data is from a single subject
+- Small sample size of 30
+- All "eyes open" chunks come from one single reading (R01) and all "eyes closed" come from a different single reading (R02). This means that the classifier may be using differences between the two recording sessions rather than the actual relevant data
 - alpha/beta power averaged across 64 channels rather than keeping per-channel to avoid overfitting as there are only 30 examples - could be changed as examples are added
 
 # Plans for the future:
-- add more subjects
-- add more classifications e.g. "left arm" movement, "right leg" movement, etc.
-- add real time classification - have a live feed that is being processed and classified
-
+- Add more subjects
+- Add more classifications e.g. "left arm" movement, "right leg" movement, etc.
+- Add real time classification - have a live feed that is being processed and classified
 
 # imports needed to run:
     import numpy as np
@@ -54,6 +53,7 @@ Datasets used from Subject S001, runs R01 & R02 - which are the sets that contai
     from sklearn.preprocessing import StandardScaler
     from sklearn.pipeline import Pipeline
 
+To install dependencies run `$ pip install -r requirements.txt`
 
 # Sources
 Barry et al. 2007 (eyes-open/closed EEG differences): https://pubmed.ncbi.nlm.nih.gov/17911042/
